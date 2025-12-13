@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rigol-instruments"
+version = "0.1.0"
+description = "Rigol instrument control for oscilloscopes and function generators"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "pyvisa>=1.15.0",
+    "pyvisa-py>=0.8.0",
+    "pyserial>=3.5",
+    "numpy>=2.0",
+    "matplotlib>=3.10",
+    "pyusb>=1.3.0",
+]
+
+[tool.setuptools]
+packages = ["Rigol"]
